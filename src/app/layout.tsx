@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css"; // Ensure you have global styles
-import Navbar from "./components/NavBar/navbar"
+import Index from "./index";
 export const metadata: Metadata = {
   title: "My Portfolio",
   description: "Welcome to my portfolio website",
@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar /> 
+        <Index /> 
         {children}
       </body>
     </html>
