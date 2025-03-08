@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Animation Loop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hidden {
+      opacity: 0;
+    }
+    .visible {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="flex justify-center items-center h-screen bg-gray-900">
+  <div class="text-center text-white text-3xl font-mono">
+    <span id="text"></span>
+  </div>
+
+  <script>
+    const texts = ["Software Engineering Student", "Data Enthusiast","AI & ML Enthusiast"];
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const speed = 100;  // Speed of typing/deleting
+    const element = document.getElementById('text');
+
+    function typeText() {
+      const currentText = texts[textIndex];
+      if (isDeleting) {
+        // Delete character one by one
+        charIndex--;
+        element.textContent = currentText.substring(0, charIndex);
+      } else {
+        // Add character one by one
+        charIndex++;
+        element.textContent = currentText.substring(0, charIndex);
+      }
+
+      if (!isDeleting && charIndex === currentText.length) {
+        // When the text is fully typed, start deleting after a delay
+        setTimeout(() => {
+          isDeleting = true;
+        }, 1000); // Wait for 1 second before deleting
+      } else if (isDeleting && charIndex === 0) {
+        // When the text is fully deleted, switch to the next one
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+        setTimeout(typeText, 500); // Start typing after a short delay
+        return;
+      }
+
+      setTimeout(typeText, speed);
+    }
+
+    typeText();
+  </script>
+</body>
+</html>

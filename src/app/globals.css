@@ -8,12 +8,31 @@
 body {
   font-family: 'Inter', sans-serif;
 }
+.css-79elbk {
+  position: relative;
+}
+#myNameTitle {
+  font-family: 'Pixelify Sans', sans-serif;
+  /* letter-spacing: 2px; */
+}
+.css-1eozjqx {
+  position: absolute;
+  z-index: -100;
+  top: -20px;
+  left: calc(2rem* 4);
+  width: 250px;
+  height: 140px;
+  filter: invert(0.2);
+}
 
+.FontChange{
+  font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
+}
 #logo {
   font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 }
 
-nav {
+nav ,#Name{
   font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 }
 

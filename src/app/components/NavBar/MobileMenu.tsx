@@ -1,17 +1,19 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
+
+//a react componenet that will receives a prop called setOpacity to control the opacity 
 const MobileMenu = ({ setOpacity }: { setOpacity: (isOpen: boolean) => void }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);//Stores if the menu is open or not
 
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-    setOpacity(!isOpen);  // Pass the state to set opacity in Layout
+  const toggleMenu = () => {//toggle means switch on/off
+    setIsOpen(!isOpen); //open close
+    setOpacity(!isOpen);  // opacity change based on setIsOpen
   };
 
   const closeMenu = () => {
-    setIsOpen(false);
+    setIsOpen(false);//close the menu
     setOpacity(false);  // Reset opacity when the menu is closed
   };
 
@@ -26,9 +28,9 @@ const MobileMenu = ({ setOpacity }: { setOpacity: (isOpen: boolean) => void }) =
         >
           {/* Toggle Hamburger Icon */}
           {isOpen ? (
-            <i id="close-icon" className="fas fa-times text-3xl"></i>
+            <i id="close-icon" className="fas fa-times text-3xl"></i>//Opem close icon appears
           ) : (
-            <i className="fa-sharp fa-solid fa-bars-staggered text-3xl"></i>
+            <i className="fa-sharp fa-solid fa-bars-staggered text-3xl"></i>//Close the bar icon shows
           )}
         </button>
       </div>
