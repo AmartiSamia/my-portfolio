@@ -6,6 +6,8 @@ import MobileMenu from "@/app/components/NavBar/MobileMenu";
 import { useState } from "react";
 import Accroche from "./components/Accroche";
 import Aside from "./components/Aside/aside";
+import AboutMe from "./components/AboutMe";
+import Experience from "./components/Experience";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,15 +52,21 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             {/* Main content area */}
             <div className="w-full max-w-screen-lg px-4 sm:px-2">
               {children}
+         
               <Accroche />
+                   <div className="m-55"></div>
+                    <AboutMe />
+                        <Experience/>
             </div>
           </div>
+       
         </main>
 
         {/* Sidebar (Aside) */}
         <div className="lg:block hidden">
           <Aside />
         </div>
+    
 
         {/* Render Mobile Menu outside of the main content */}
         {isMenuOpen && <MobileMenu setOpacity={setMenuOpen} />}
