@@ -56,6 +56,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <Accroche />
                    <div className="m-55"></div>
                     <AboutMe />
+                    
                         <Experience/>
             </div>
           </div>
