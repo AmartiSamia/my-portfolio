@@ -33,15 +33,16 @@ export default function Accroche() {
 
   return (
     <>
-      <main className="flex flex-col max-sm:ml-[-20px]  max-sm:mt-[80px] items-start justify-center sm:ml-7 mt-30 px-6 md:px-20 lg:ml-[-49px] relative ">
+      <main className="flex flex-col max-sm:ml-[-20px]  max-sm:mt-[60px] items-start justify-center sm:ml-7 mt-30 px-6 md:px-20 lg:ml-[-49px] relative ">
         <div className="try ">
         <img
   alt=""
-  className="chakra-image css-1eozjqx lg:ml-[-151px] sm:ml-[-120px] sm:max-w-[130px] md:ml-[-70px] lg:max-w-[400px] max-sm:ml-[-180px] max-sm:mt-[30px]"
+  className="chakra-image css-1eozjqx lg:ml-[-151px] sm:ml-[-120px] sm:max-w-[130px] md:ml-[-70px] lg:max-w-[400px] max-sm:ml-[-180px] max-sm:mt-[10px]"
   src="https://svgsilh.com/svg/26432.svg"
 />
 
           <p id="Name" className="text-[#64ffda] mb-4 text-[20px]">Hey there, my name is-</p>
+       
           <div className="FontChange ">
             <h1 className="lg:text-[80px] md:text-7xl sm:text-6xl font-bold text-[#ccd6f6] max-sm:text-6xl mb-5">Samia El Amarti.</h1>
           </div>

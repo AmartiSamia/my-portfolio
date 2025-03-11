@@ -38,7 +38,27 @@ body {
 #logo {
   font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 }
-
+.underline-animation {
+  position: relative;
+  display: inline-block;
+}
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  display: block;
+  margin-top: -4px;
+  right: 0;
+  background: #a8b2d1;
+  transition: width 0.2s ease-in-out;
+  -webkit-transition: width 0.2s ease-in-out;
+}
+.underline-animation:hover::after {
+  width: 100%;
+  left: 0;
+  background: #a8b2d1cb;
+}
 nav ,#Name{
   font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 }

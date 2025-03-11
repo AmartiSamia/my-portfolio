@@ -8,6 +8,8 @@ import Accroche from "./components/Accroche";
 import Aside from "./components/Aside/aside";
 import AboutMe from "./components/AboutMe";
 import Experience from "./components/Experience";
+import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -58,6 +60,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     <AboutMe />
                     
                         <Experience/>
+
+                        <Projects/>
+                        <Contact/>
             </div>
           </div>
        

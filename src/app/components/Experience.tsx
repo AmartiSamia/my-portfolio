@@ -35,7 +35,7 @@ export default function Experience() {
   };
 
   return (
-    <main className="mb-90 flex lg:mt-[-120px] max-sm:ml-[-10px] lg:ml-[50px] max-sm:mt-[80px] flex-row max-sm:flex-wrap sm:ml-5 max-sm:flex-row md:flex-row items-start ml-[-15px] md:p-12 lg:gap-12 sm:gap-4 md:ml-[-40px] md:gap-1">
+    <main className="mb-90  flex lg:mt-[-120px] max-sm:ml-[-10px] lg:ml-[50px] max-sm:mt-[-160px] flex-row max-sm:flex-wrap sm:ml-5 max-sm:flex-row md:flex-row items-start ml-[-15px] md:p-12 lg:gap-12 sm:gap-4 md:ml-[-40px] md:gap-1">
       <div className="md:w-3/3 sm:w-1/2 sm:mx-8 max-sm:w-full">
         <h1 className="text-[#64ffda] text-xl font-bold mb-4 flex items-center">
           <span id="Name" className="text-3xl font-[300]">02.</span>
@@ -45,14 +45,14 @@ export default function Experience() {
 
         <div className="sm:w-full max-w-full flex flex-col md:flex-row max-sm:flex-col sm:flex-row mt-10 sm:justify-center lg:items-start">
           <div className="md:w-1/4 max-sm:w-full max-sm:flex-col mb-6 md:mb-0 sm:mt-9 ">
-            <ul id="Name" className="space-y-3 max-sm:space-x-5 max-sm:ml-40 max-sm:items-center max-sm:inline text-[#8892b0] text-[18px] sm:text-sm mt-2 sm:text-[15px] ">
+            <ul id="Name" className="space-y-3 max-sm:space-x-5 max-sm:ml-[30%] max-sm:inline text-[#8892b0] text-[18px] sm:text-sm mt-2 sm:text-[15px] ">
               {Object.keys(experiences).map((key) => (
                 <li
                   key={key}
                   className={`border-l-3 pl-3 cursor-pointer transition-all duration-300 ease-in-out max-sm:inline transform ${
                     activeTab === key
                       ? 'scale-105 text-[#64ffda] border-[#64ffda] font-bold bg-[#112240] p-2 '
-                      : 'border-[#233554]  hover:font-bold hover:scale-105 text hover:bg-[#112240] p-2'
+                      : 'border-[#233554] hover:font-bold hover:scale-105 text hover:bg-[#112240] p-2'
                   }`}
                   onClick={() => setActiveTab(key as ExperienceKey)}
                   aria-selected={activeTab === key}
@@ -64,7 +64,7 @@ export default function Experience() {
           </div>
 
           <div
-            className={`sm:w-full ml-7 transition-all duration-300 ease-in-out lg:text-[16px] mt-4 md:mt-0 md:pl-8 sm:text-sm sm:ml-28 md:ml-0 lg:ml-5 sm:mr-[-200px] lg:mr-[80px] md:mr-[-30px] ${
+            className={`sm:w-full ml-7 max-sm:ml-[5px] transition-all duration-300 ease-in-out lg:text-[16px] mt-4 md:mt-0 md:pl-8 sm:text-sm sm:ml-18 md:ml-0 lg:ml-5 sm:mr-[-200px] lg:mr-[80px] md:mr-[-30px] ${
               activeTab === 'Iker' || activeTab === 'Veolia' ? 'opacity-100 translate-y-0 ease-linear' : 'opacity-0 translate-y-5'
             }`}
           >
@@ -78,7 +78,7 @@ export default function Experience() {
               <p id="Name" className="text-[#8892b0] mt-2">
                 {experiences[activeTab].date}
               </p>
-              <ul className="mt-4 space-y-2 text-[#8892b0]">
+              <ul className="mt-4 sm:text-[13px] max-sm:text-[13px]  lg:text-[16px] space-y-2 text-[#8892b0]">
                 {experiences[activeTab].details.map((detail, index) => (
                   <li key={index} className="flex items-start">
                     <span className="text-[#64ffda] mr-4">▹</span>
