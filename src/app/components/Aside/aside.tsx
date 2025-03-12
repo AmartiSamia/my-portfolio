@@ -1,7 +1,7 @@
 export default function Aside() {
     return (
         <>
-            <aside className="fixed bottom-0 left-10 flex flex-col items-center space-y-10 lg:block sm:hidden">
+            <aside className="fixed bottom-0 left-10 md:ml-[-10px] flex flex-col items-center space-y-10 lg:block sm:hidden">
                 <ul className="space-y-6 ml-[-10px] ">
                     {/* GitHub */} 
                     <li>
@@ -83,7 +83,7 @@ export default function Aside() {
 
                 <div className="w-px h-31 bg-[#ffffffe4]"></div>
             </aside>
-            <aside className="fixed bottom-0 right-0 mr-[-20px] flex flex-col items-center space-y-29">
+            <aside className="fixed bottom-0 right-0  md:right-[-50] mr-[-20px] flex flex-col items-center space-y-29">
                 <a href="mailto:brittany.chiang@gmail.com" className="text-[#ffffffe4] hover:text-[#64ffda] transform rotate-90 transition-all duration-300 lg:block sm:hidden">
                     samia.elamarti11@gmail.com
                 </a>
