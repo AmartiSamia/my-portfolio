@@ -10,6 +10,8 @@ import AboutMe from "./components/AboutMe";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact";
+import Certifications from "./components/Certfications/Certifications";
+import Skills from "./components/Skills/Skills";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -60,9 +62,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     <AboutMe />
                     
                         <Experience/>
-
+<Skills/>
                         <Projects/>
+                           <Certifications/>
                         <Contact/>
+                     
             </div>
           </div>
        
