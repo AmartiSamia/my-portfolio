@@ -14,7 +14,7 @@ export default function Projects(){
 <div className="flex flex-col md:mx-[70px] lg:mx-[30px] lg:ml-[80px]  md:flex-row items-center md:items-start mt-[50px] ml-[65px]">
     <div className="md:w-1/2 mb-6 md:mb-0 transition-all ease-in-out  md:ml-[-80px] "><a href="">
    
-    <div className="md:w-1/2 mb-6 md:mb-0 transition-all ease-in-out lg:hidden sm:block relative group md:mx-70">
+    <div className="md:w-1/2 mb-6 md:mb-0 transition-all ease-in-out lg:hidden sm:block relative group md:mx-28">
    <a href="">
 
     <div className="relative inline-block w-[436px]">
@@ -22,9 +22,9 @@ export default function Projects(){
      <div className="absolute ml-[38px] inset-0 bg-[#112240] bg-opacity-50 flex items-center justify-center opacity-85 group-hover:opacity-0 transition-opacity duration-300 rounded-lg ">
   
       <p className="text-[#a8b2d1] mb-2 lg:text-right sm:text-[14px] transition-all duration-500 underline-offset-5 ease-in-out p-4">
-      <h2 className="lg:hidden sm:block  sm:text-[17px] text-center text-[#64ffda] lg:text-2xl font-semibold mb-5 " id="Name">
+      <div className="lg:hidden sm:block  sm:text-[17px] text-center text-[#64ffda] lg:text-2xl font-semibold mb-5 " id="Name">
      VisionText - AI-Driven Text-to-Image Platform
-    </h2>
+    </div>
        VisionText is an AI-powered platform that generates images based on textual descriptions. The platform uses the
        <span className="text-[#64ffda] underline-animation">
         Stable Diffusion model
