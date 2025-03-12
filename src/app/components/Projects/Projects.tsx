@@ -8,22 +8,22 @@ export default function Projects(){
     
     
     
-    <div className="md:w-3/3  sm:mx-8 max-sm:w-full">
+    <div className="md:w-3/3  sm:mx-8 max-sm:mx-1">
       <h1 className="text-[#64ffda] text-xl font-bold mb-4 flex items-center">
         <span id="Name" className="text-3xl font-[300] max-sm:text-[24px]">03.</span>
-        <span id="Name" className="text-[#ccd6f6] text-3xl ml-2 sm:text-2xl max-sm:text-[24px]">Some Things I’ve Built</span>
+        <span id="Name" className="text-[#ccd6f6] text-3xl ml-2 sm:text-2xl max-sm:text-[22px]">Some Things I’ve Built</span>
         <hr className="flex-grow border-t border-[#8892b0bd] ml-4 max-sm:ml-[5px] max-sm:mr-[9px] mr-[70px] " />
       </h1>
 {/* Container */}
-<div className="flex flex-col max-sm:ml-[-28px]   md:mx-[70px] lg:mx-[30px] lg:ml-[80px]  md:flex-row items-center md:items-start mt-[50px] ml-[65px]">
-    <div className="md:w-1/2 mb-6 md:mb-0 transition-all ease-in-out  md:ml-[-80px] max-sm:ml-[100px] max-sm:mr-[50px]"><a href="">
+<div className="flex flex-col max-sm:mx-[-28px] md:mx-[70px] lg:mx-[30px] lg:ml-[80px]  md:flex-row items-center md:items-start mt-[50px] ml-[65px]">
+    <div className="md:w-1/2 mb-6 md:mb-0 transition-all ease-in-out  md:ml-[-80px]"><a href="">
    {/* The div for sm et max-sm et md */}
     <div className=" mb-6 md:mb-0 transition-all ease-in-out lg:hidden sm:block relative group md:mx-28 sm:mx-[-28]">
    <a href="">
 
-    <div className="relative inline-block w-[436px] max-sm:w-[390px]">
+    <div className="relative inline-block w-[436px] max-sm:w-[385px]">
      <Image alt="Screenshot of Halcyon theme in VS Code, showing code editor with dark blue theme" className=" rounded-lg shadow-lg filter transition transform hover:scale-110 lg:block duration-400 sm:w-[400px]  sm:ml-9 lg:w-[500px]" height={530} src={image} width={500}/>
-     <div className="absolute sm:ml-[38px] max-sm:w-[390px] inset-0 bg-[#112240] bg-opacity-50 flex items-center justify-center opacity-85 group-hover:opacity-0 transition-opacity duration-300 rounded-lg ">
+     <div className="absolute sm:ml-[38px] max-sm:w-[385px] inset-0 bg-[#112240] bg-opacity-50 flex items-center justify-center opacity-85 group-hover:opacity-0 transition-opacity duration-300 rounded-lg ">
   
       <p className="text-[#a8b2d1] mb-2 lg:text-right sm:text-[14px] max-sm:text-[15px] transition-all duration-500 underline-offset-5 ease-in-out p-4">
       <div className="lg:hidden sm:block  sm:text-[17px] text-center text-[#64ffda] lg:text-2xl font-semibold mb-5 " id="Name">
@@ -120,7 +120,7 @@ export default function Projects(){
      </h2>
 
      <div className="bg-[#112240] p-4 rounded-lg shadow-lg mb-4 transition transform hover:shadow-gray-900 duration-400">
-      <p className="text-[#a8b2d1]max-sm: hidden mb-2 lg:text-right sm:text-[15px] transition-all duration-500 underline-offset-5 ease-in-out">
+      <p className="text-[#a8b2d1]  mb-2 lg:text-right sm:text-[15px] transition-all duration-500 underline-offset-5 ease-in-out">
       VisionText is an AI-powered platform that generates images based on textual descriptions. The platform uses the  <span className="text-[#64ffda] underline-animation">Stable Diffusion model</span>  to generate images in real time, offering content creators and designers an intuitive interface. Developed with Django and Django REST Framework, it seamlessly handles API requests, while the frontend is built using React. Additionally, PyTorch and the Hugging Face API are used for AI capabilities.
       
       </p>
