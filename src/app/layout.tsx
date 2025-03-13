@@ -12,6 +12,7 @@ import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact";
 import Certifications from "./components/Certfications/Certifications";
 import Skills from "./components/Skills/Skills";
+import TechStack from "./components/Skills/After";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

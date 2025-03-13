@@ -41,7 +41,7 @@ export default function Accroche() {
   src="https://svgsilh.com/svg/26432.svg"
 />
 
-          <p id="Name" className="text-[#64ffda] mb-4 text-[20px]">Hey there, my name is-</p>
+          <p id="Name" className="text-[#64ffda] mb-4 text-[20px]">Hey there!, my name is-</p>
        
           <div className="FontChange ">
             <h1 className="lg:text-[80px] md:text-7xl sm:text-6xl font-bold text-[#ccd6f6] max-sm:text-6xl mb-5">Samia El Amarti.</h1>
