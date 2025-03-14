@@ -15,6 +15,23 @@ body {
   font-family: 'Pixelify Sans', sans-serif;
   /* letter-spacing: 2px; */
 }
+html {
+  scroll-behavior: smooth;
+}
+/* In your globals.css or specific CSS file */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add any additional styles you need for the fixed navbar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
 .css-1eozjqx {
   position: absolute;
   z-index: -100;

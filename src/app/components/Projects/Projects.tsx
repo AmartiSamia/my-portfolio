@@ -3,22 +3,22 @@ import image from '../Projects/screen.png';
 export default function Projects(){
   
     return(<>
-    <main className="mb-90 flex lg:mt-[-120px] lg:ml-[-35px] max-sm:mt-[-160px]   lg: flex-row max-sm:flex-wrap sm:ml-5 max-sm:flex-row md:flex-row items-start ml-[-15px] md:p-12 lg:gap-12 sm:gap-4 md:ml-[-40px] md:gap-1">
+    <main id="projects" className="mb-90 flex lg:mt-[-120px] lg:ml-[-35px] max-sm:mt-[-160px]   lg: flex-row max-sm:flex-wrap sm:ml-5 max-sm:flex-row md:flex-row items-start ml-[-15px] md:p-12 lg:gap-12 sm:gap-4 md:ml-[-40px] md:gap-1">
     
     
     
     
-    <div className="md:w-3/3  sm:mx-8 max-sm:mx-1">
+    <div className="lg:mt-8 sm:mt-18 md:mt-8 max-sm:mt-8  md:w-3/3  sm:mx-8 max-sm:mx-1">
       <h1 className="text-[#64ffda] text-xl font-bold mb-4 flex items-center">
         <span id="Name" className="text-3xl font-[300] max-sm:text-[24px]">03.</span>
         <span id="Name" className="text-[#ccd6f6] text-3xl ml-2 sm:text-2xl max-sm:text-[22px]">Some Things I’ve Built</span>
         <hr className="flex-grow border-t border-[#8892b0bd] ml-4 max-sm:ml-[5px] max-sm:mr-[9px] mr-[70px] " />
       </h1>
 {/* Container */}
-<div className="flex flex-col max-sm:mx-[-28px] md:mx-[70px] lg:mx-[30px] lg:ml-[80px]  md:flex-row items-center md:items-start mt-[50px] ml-[65px]">
+<div className="flex flex-col max-sm:mx-[-28px] md:mx-[70px] lg:mx-[30px] lg:ml-[80px]  md:flex-row items-center md:items-start mt-[50px] ml-[85px]">
     <div className="md:w-1/2 mb-6 md:mb-0 transition-all ease-in-out  md:ml-[-80px]"><a href="">
    {/* The div for sm et max-sm et md */}
-    <div className=" mb-6 md:mb-0 transition-all ease-in-out lg:hidden sm:block relative group md:mx-28 sm:mx-[-28]">
+    <div className=" mb-6 md:mb-0 transition-all ease-in-out lg:hidden sm:block relative group md:mx-28 max-sm:ml-[6px] sm:mx-[-28]">
    <a href="">
 
     <div className="relative inline-block w-[436px] max-sm:w-[385px]">

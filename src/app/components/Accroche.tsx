@@ -33,7 +33,7 @@ export default function Accroche() {
 
   return (
     <>
-      <main className="flex flex-col max-sm:ml-[-20px]  max-sm:mt-[60px] items-start justify-center sm:ml-7 mt-30 px-6 md:px-20 lg:ml-[-49px] relative ">
+      <main className="flex flex-col max-sm:ml-[-20px]  max-sm:mt-[60px] items-start justify-center sm:ml-7 mt-25 px-6 md:px-20 lg:ml-[-49px] relative ">
         <div className="try ">
         <img
   alt=""

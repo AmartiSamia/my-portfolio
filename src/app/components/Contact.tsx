@@ -1,7 +1,7 @@
 export default function Contacts() {
     return (
         <>
-           <main className="bg-[#0a192f] text-white flex items-center justify-center min-h-screen">
+           <main id="contact" className="bg-[#0a192f] text-white flex items-center justify-center min-h-screen">
     <div className="text-center px-4">
         <p className="text-[#64ffda] text-sm md:text-base mb-2">04. What's Next?</p>
         <h1 className="text-4xl md:text-5xl font-bold text-[#ccd6f6] mb-4">Get In Touch</h1>

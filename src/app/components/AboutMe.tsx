@@ -3,9 +3,9 @@ import pic1 from "./Pic2.jpg";
 
 export default function AboutMe() {
     return (
-        <main className=" mb-90 flex max-sm:ml-[-10px] lg:ml-[-50px] max-sm:mt-[80px] flex-row max-sm:flex-wrap sm:ml-5 max-sm:flex-row md:flex-row items-start ml-[-15px] md:p-12 lg:gap-12 sm:gap-4 md:ml-[-40px] md:gap-1">
-            <div className="md:w-2/3 sm:w-1/2 sm:mx-8 max-sm:w-full">
-                   <h1 className="text-[#64ffda] text-xl font-bold mb-4 flex items-center">
+        <main id="about" className=" mt-90 mb-90 flex max-sm:ml-[-10px] lg:ml-[-50px] max-sm:mt-[80px] flex-row max-sm:flex-wrap sm:ml-5 max-sm:flex-row md:flex-row items-start ml-[-15px] md:p-12 lg:gap-12 sm:gap-4 md:ml-[-40px] md:gap-1">
+            <div className=" lg:mt-8 sm:mt-18 md:mt-8 max-sm:mt-8 md:w-2/3 sm:w-1/2 sm:mx-8 max-sm:w-full">
+                   <h1 className="text-[rgb(100,255,218)] text-xl font-bold mb-4 flex items-center">
                     <span id="Name" className="text-3xl font-[300]">01.</span>
                     <span id="Name" className="text-[#ccd6f6] text-3xl ml-2">About Me</span>
                     <hr className="flex-grow border-t border-[#8892b0bd] ml-4" />

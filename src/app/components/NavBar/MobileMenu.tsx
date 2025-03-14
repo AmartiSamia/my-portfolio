@@ -6,6 +6,12 @@ import React, { useState } from "react";
 const MobileMenu = ({ setOpacity }: { setOpacity: (isOpen: boolean) => void }) => {
   const [isOpen, setIsOpen] = useState(false);//Stores if the menu is open or not
 
+  const handleClick = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   const toggleMenu = () => {//toggle means switch on/off
     setIsOpen(!isOpen); //open close
@@ -54,12 +60,12 @@ const MobileMenu = ({ setOpacity }: { setOpacity: (isOpen: boolean) => void }) =
      
         <nav className="bg-[#112240] flex justify-center items-center h-max text-[#64ffda] text-lg pt-10">
             <ul className="block justify-center items-center space-y-10 pt-1">
-                <li><a href="#" className="hover:text-[#64ffda]"><div className="flex justify-center">01. </div><span className="text-[#CCD6F6] hover:text-[#64ffda] flex justify-center">About</span></a></li>
-                <li><a href="#" className="hover:text-[#64ffda]"><div className="flex justify-center">02. </div><span className="text-[#CCD6F6] hover:text-[#64ffda] flex justify-center">Experience</span></a></li>
-                <li><a href="#" className="hover:text-[#64ffda]"><div className="flex justify-center">03. </div><span className="text-[#CCD6F6] hover:text-[#64ffda] flex justify-center">Certifications</span></a></li>
-                <li><a href="#" className="hover:text-[#64ffda]"><div className="flex justify-center">04. </div><span className="text-[#CCD6F6] hover:text-[#64ffda] flex justify-center">Projects</span></a></li>
-                <li><a href="#" className="hover:text-[#64ffda]"><div className="flex justify-center">05. </div><span className="text-[#CCD6F6] hover:text-[#64ffda] flex justify-center">Contact</span></a></li>
-                <li><a href="#" className="border border-[#64ffda] px-4 py-2 rounded hover:bg-[#64ffda] hover:text-[#0a192f] flex justify-center">Resume</a></li>
+                <li> <a href="#about" onClick={() => handleClick("about")}  className="hover:text-[#64ffda]"><div className="flex justify-center">01. </div><span className="text-[#CCD6F6] hover:text-[#64ffda] flex justify-center">About</span></a></li>
+                <li><a href="#experience" onClick={() => handleClick("experience")}  className="hover:text-[#64ffda]"><div className="flex justify-center">02. </div><span className="text-[#CCD6F6] hover:text-[#64ffda] flex justify-center">Experience</span></a></li>
+               <li> <a href="#skills" onClick={() => handleClick("skills")}  className="hover:text-[#64ffda]"><div className="flex justify-center">03. </div><span className="text-[#CCD6F6] hover:text-[#64ffda] flex justify-center">Skills</span></a></li>
+                <li> <a href="#certifications" onClick={() => handleClick("certifications")}  className="hover:text-[#64ffda]"><div className="flex justify-center">04. </div><span className="text-[#CCD6F6] hover:text-[#64ffda] flex justify-center">Certifications</span></a></li>
+                <li>  <a href="#projects" onClick={() => handleClick("projects")}  className="hover:text-[#64ffda]"><div className="flex justify-center">05. </div><span className="text-[#CCD6F6] hover:text-[#64ffda] flex justify-center">Projects</span></a></li>
+                <li><a href="#contact" onClick={() => handleClick("contact")} className="border border-[#64ffda] px-4 py-2 rounded hover:bg-[#64ffda] hover:text-[#0a192f] flex justify-center">Contact</a></li>
             </ul>
         </nav>
       </div>

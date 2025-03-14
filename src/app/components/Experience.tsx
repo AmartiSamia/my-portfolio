@@ -35,8 +35,8 @@ export default function Experience() {
   };
 
   return (
-    <main className="mb-90  flex lg:mt-[-120px] max-sm:ml-[-10px] lg:ml-[50px] max-sm:mt-[-160px] flex-row max-sm:flex-wrap sm:ml-5 max-sm:flex-row md:flex-row items-start ml-[-15px] md:p-12 lg:gap-12 sm:gap-4 md:ml-[-40px] md:gap-1">
-      <div className="md:w-3/3 sm:w-1/2 sm:mx-8 max-sm:w-full">
+    <main id="experience" className="mb-90  flex lg:mt-[-120px] max-sm:ml-[-10px] lg:ml-[50px] max-sm:mt-[-160px] flex-row max-sm:flex-wrap sm:ml-5 max-sm:flex-row md:flex-row items-start ml-[-15px] md:p-12 lg:gap-12 sm:gap-4 md:ml-[-40px] md:gap-1">
+      <div className="lg:mt-8 sm:mt-18 md:mt-8 max-sm:mt-8  md:w-3/3 sm:w-1/2 sm:mx-8 max-sm:w-full">
         <h1 className="text-[#64ffda] text-xl font-bold mb-4 flex items-center">
           <span id="Name" className="text-3xl font-[300]">02.</span>
           <span id="Name" className="text-[#ccd6f6] text-3xl ml-2">Experiences</span>

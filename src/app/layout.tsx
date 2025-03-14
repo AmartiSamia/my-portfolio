@@ -1,9 +1,8 @@
-"use client";  // This marks the file as a client component
-
+"use client";
+import React, { useState, useEffect } from "react";
 import "./globals.css";
 import NavBar from "@/app/components/NavBar/Navbar";
 import MobileMenu from "@/app/components/NavBar/MobileMenu";
-import { useState } from "react";
 import Accroche from "./components/Accroche";
 import Aside from "./components/Aside/aside";
 import AboutMe from "./components/AboutMe";
@@ -12,14 +11,35 @@ import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact";
 import Certifications from "./components/Certfications/Certifications";
 import Skills from "./components/Skills/Skills";
-import TechStack from "./components/Skills/After";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isNavbarVisible, setIsNavbarVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const setMenuOpen = (isOpen: boolean) => {
     setIsMenuOpen(isOpen);
   };
+
+  // Handle Navbar visibility on scroll
+  const handleScroll = () => {
+    if (window.scrollY > lastScrollY) {
+      // If scroll is down, hide the navbar
+      setIsNavbarVisible(true);
+    } else {
+      // If scroll is up, show the navbar
+      setIsNavbarVisible(true);
+    }
+    setLastScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
 
   return (
     <html lang="en">
@@ -35,7 +55,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body className="bg-[#0a192f] text-white p-5 lg:px-11 sm:p-1 sm:pt-4">
         {/* Header and NavBar */}
-        <header className="flex justify-between items-center px-7 py-3">
+        <header
+          className={`flex justify-between items-center px-7 py-3 fixed top-0 left-0 w-full z-50 bg-[#0a192f] ${!isNavbarVisible && "hidden"}`}
+        >
           <div className="flex items-center">
             <div
               id="logo"
@@ -49,35 +71,31 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <NavBar />
           <MobileMenu setOpacity={setMenuOpen} />
         </header>
-        <hr className="h-px border-0 dark:bg-gray-700" />
 
-        {/* Main Content with opacity change when menu is open */}
-        <main className={`transition-opacity duration-300 ${isMenuOpen ? "opacity-50" : "opacity-100"}`}>
-          <div className="flex justify-center w-full">
+        {/* HR Element with adjusted margin-top */}
+        <hr className="h-px border-0 mt-[50px] dark:bg-gray-700" /> {/* Added margin-top */}
+
+        {/* Main content starts after the navbar */}
+        <main className={`transition-opacity duration-300 mt-[-50px] ${isMenuOpen ? "opacity-50" : "opacity-100"}`}>
+          <div className="flex justify-center w-full mt-[80px]"> {/* Adjusted margin-top */}
             {/* Main content area */}
             <div className="w-full max-w-screen-lg px-4 sm:px-2">
               {children}
-         
               <Accroche />
-                   <div className="m-55"></div>
-                    <AboutMe />
-                    
-                        <Experience/>
-<Skills/>
-                        <Projects/>
-                           <Certifications/>
-                        <Contact/>
-                     
+              <AboutMe id="about" />
+              <Experience id="experience" />
+              <Skills id="skills" />
+              <Projects id="projects" />
+              <Certifications id="certifications" />
+              <Contact id="contact" />
             </div>
           </div>
-       
         </main>
 
         {/* Sidebar (Aside) */}
         <div className="lg:block hidden">
           <Aside />
         </div>
-    
 
         {/* Render Mobile Menu outside of the main content */}
         {isMenuOpen && <MobileMenu setOpacity={setMenuOpen} />}
