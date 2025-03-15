@@ -1,4 +1,5 @@
 import { FaReact, FaJs, FaCss3Alt, FaNodeJs, FaPython, FaJava, FaGithub } from 'react-icons/fa';
+import { JSX } from 'react';
 import { DiMongodb, DiDjango, DiPhp } from 'react-icons/di';
 import { SiTailwindcss, SiExpress, SiNextdotjs, SiMysql, SiWordpress, SiShopify } from 'react-icons/si';
 import { FaHtml5, FaBootstrap } from 'react-icons/fa';
@@ -62,7 +63,7 @@ export default function Skills() {
 
   return (
     <main id="skills" className="mb-90 w-full text-center flex justify-center max-sm:ml-[-10px] max-sm:mt-[80px] flex-row max-sm:flex-wrap sm:ml-5 max-sm:flex-row md:flex-row items-start md:p-12 lg:mx-0 sm:gap-4 md:ml-[-40px] md:gap-1">
-      <div className="lg:mt-8 sm:mt-18 md:mt-8 max-sm:mt-8  md:w-full sm:w-full sm:mx-8 max-sm:w-full">
+      <div className="lg:mt-8 sm:mt-18 md:mt-8 sm:ml-[-18px] max-sm:mt-18  md:w-full sm:w-full sm:mx-8 max-sm:w-full">
         <h1 className="text-[#64ffda] text-xl font-bold mb-4 text-center items-center flex justify-center">
           <hr className="flex-grow border-t border-[#64ffda] mr-4" />
           <span id="Name" className="text-[#ccd6f6] text-4xl mb-8 max-sm:text-[26px]">

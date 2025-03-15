@@ -20,6 +20,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const setMenuOpen = (isOpen: boolean) => {
     setIsMenuOpen(isOpen);
   };
+  const handleLogoClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   // Handle Navbar visibility on scroll
   const handleScroll = () => {
@@ -44,11 +47,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <title>My Portfolio</title>
+        <title>Samia El Amarti</title>
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
           rel="stylesheet"
         />
+     
         <style>
           @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
         </style>
@@ -61,6 +65,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="flex items-center">
             <div
               id="logo"
+              onClick={handleLogoClick} // Added click handler
+              style={{ cursor: 'pointer' }} // Added cursor style
               className="text-white text-4xl font-bold flex items-center m-0 pl-4 lg:static max-sm:ml-[-20px]"
             >
               <div className="text-gray-400">{"{"}</div>

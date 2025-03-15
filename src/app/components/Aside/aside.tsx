@@ -5,7 +5,7 @@ export default function Aside() {
                 <ul className="space-y-6 ml-[-10px] ">
                     {/* GitHub */} 
                     <li>
-                        <a href="https://github.com/bchiang7" aria-label="GitHub" target="_blank" rel="noreferrer">
+                        <a href="https://github.com/AmartiSamia" aria-label="GitHub" target="_blank" rel="noreferrer">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 role="img"
@@ -24,7 +24,7 @@ export default function Aside() {
                     </li>
                     {/* Instagram */}
                     <li>
-                        <a href="https://www.instagram.com/bchiang7" aria-label="Instagram" target="_blank" rel="noreferrer">
+                        <a href="https://www.instagram.com/samia.amarti/?igsh=MTh4ZGViaXdvaXR0cg%3D%3D&utm_source=qr#" aria-label="Instagram" target="_blank" rel="noreferrer">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 role="img"
@@ -45,7 +45,7 @@ export default function Aside() {
                     </li>
                     {/* Gmail */}
                     <li>
-                    <a href="mailto:brittany.chiang@gmail.com" aria-label="Gmail">
+                    <a href="mailto:samia.elamarti11@gmail.com" aria-label="Gmail">
                             <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
@@ -60,7 +60,7 @@ export default function Aside() {
 
                     {/* LinkedIn */}
                     <li>
-                        <a href="https://www.linkedin.com/in/bchiang7" aria-label="LinkedIn" target="_blank" rel="noreferrer">
+                        <a href="https://www.linkedin.com/in/samia-el-amarti" aria-label="LinkedIn" target="_blank" rel="noreferrer">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 role="img"
@@ -84,7 +84,7 @@ export default function Aside() {
                 <div className="w-px h-31 bg-[#ffffffe4]"></div>
             </aside>
             <aside className="fixed bottom-0 right-0  md:right-[-50] mr-[-20px] flex flex-col items-center space-y-29">
-                <a href="mailto:brittany.chiang@gmail.com" className="text-[#ffffffe4] hover:text-[#64ffda] transform rotate-90 transition-all duration-300 lg:block sm:hidden">
+                <a href="mailto:samia.elamarti11@gmail.com" className="text-[#ffffffe4] hover:text-[#64ffda] transform rotate-90 transition-all duration-300 lg:block sm:hidden">
                     samia.elamarti11@gmail.com
                 </a>
                 <div className="w-px h-24 bg-gray-400"></div>

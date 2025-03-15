@@ -7,6 +7,13 @@ export default function Accroche() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [currentText, setCurrentText] = useState("");
   
+  const handleClick = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const speed = 100;
 
   useEffect(() => {
@@ -55,7 +62,7 @@ export default function Accroche() {
     </p>
 
      
-        <a id="myNameTitle" href="#" className="border border-[#64ffda] text-[#64ffda] px-6 py-3 rounded">Contact me!</a>
+    <a href="#contact" onClick={() => handleClick("contact")} id="myNameTitle" className="border border-[#64ffda] text-[#64ffda] px-6 py-3 rounded">Contact me!</a>
       </main>
     </>
   );

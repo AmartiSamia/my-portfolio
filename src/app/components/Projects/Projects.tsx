@@ -8,9 +8,9 @@ export default function Projects(){
     
     
     
-    <div className="lg:mt-8 sm:mt-18 md:mt-8 max-sm:mt-8  md:w-3/3  sm:mx-8 max-sm:mx-1">
+    <div className="lg:mt-8 sm:mt-18 md:mt-8 max-sm:mt-18  md:w-3/3  sm:mx-8 max-sm:mx-1">
       <h1 className="text-[#64ffda] text-xl font-bold mb-4 flex items-center">
-        <span id="Name" className="text-3xl font-[300] max-sm:text-[24px]">03.</span>
+        <span id="Name" className="text-3xl font-[300] max-sm:text-[24px]">04.</span>
         <span id="Name" className="text-[#ccd6f6] text-3xl ml-2 sm:text-2xl max-sm:text-[22px]">Some Things I’ve Built</span>
         <hr className="flex-grow border-t border-[#8892b0bd] ml-4 max-sm:ml-[5px] max-sm:mr-[9px] mr-[70px] " />
       </h1>

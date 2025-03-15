@@ -4,7 +4,7 @@ import pic1 from "./Pic2.jpg";
 export default function AboutMe() {
     return (
         <main id="about" className=" mt-90 mb-90 flex max-sm:ml-[-10px] lg:ml-[-50px] max-sm:mt-[80px] flex-row max-sm:flex-wrap sm:ml-5 max-sm:flex-row md:flex-row items-start ml-[-15px] md:p-12 lg:gap-12 sm:gap-4 md:ml-[-40px] md:gap-1">
-            <div className=" lg:mt-8 sm:mt-18 md:mt-8 max-sm:mt-8 md:w-2/3 sm:w-1/2 sm:mx-8 max-sm:w-full">
+            <div className=" lg:mt-8 sm:mt-18 md:mt-8 max-sm:mt-18 md:w-2/3 sm:w-1/2 sm:mx-8 max-sm:w-full">
                    <h1 className="text-[rgb(100,255,218)] text-xl font-bold mb-4 flex items-center">
                     <span id="Name" className="text-3xl font-[300]">01.</span>
                     <span id="Name" className="text-[#ccd6f6] text-3xl ml-2">About Me</span>
@@ -17,7 +17,7 @@ export default function AboutMe() {
                     My focus is on creating impactful software that can transform how people interact with technology. I specialize in designing solutions that cater to a wide range of needs, from personal projects to large-scale enterprise systems. Through a hands-on approach and a strong commitment to high-quality code, I am dedicated to delivering robust, scalable, and user-friendly applications. My goal is to ensure that the solutions I create not only meet but exceed client expectations in performance, usability, and innovation.
                 </p>
                 <p className="mt-3 lg:text-[16px] text-md text-[#8892b0]  sm:text-sm max-sm:text-[15px]">
-                    As I work toward becoming an engineer in 2026 at EMSI: <span className="text-[#64ffda]">École Marocaine des Sciences de l'Ingénieur, Morocco,</span> I am excited to apply my knowledge and skills to make meaningful contributions to the tech industry. I look forward to the opportunities that will allow me to innovate and solve complex problems, leaving a lasting impact.
+                    As I work toward becoming an engineer in 2026 at EMSI: <a href="https://emsi.ma/" target="__blank"><span className="text-[#64ffda] underline-animation">École Marocaine des Sciences de l'Ingénieur, Morocco,</span></a> I am excited to apply my knowledge and skills to make meaningful contributions to the tech industry. I look forward to the opportunities that will allow me to innovate and solve complex problems, leaving a lasting impact.
                 </p>
             </div>
             <div className="mt-8  mr-[-85px] md:mr-[0] max-sm:ml-[75] items-center self-center relative max-sm:w-2/4  sm:w-1/3">
